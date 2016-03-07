@@ -14,6 +14,9 @@
 Route::get('/', 'CardsController@index'); 
 Route::get('show/{card}', 'CardsController@show');
 Route::post('cards/{card}/notes', 'NotesController@store');
+Route::get('/notes/{note}/edit', 'NotesController@edit'); 
+Route::patch('notes/{note}', 'NotesController@update');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
